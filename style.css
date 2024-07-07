@@ -1,0 +1,766 @@
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	
+}
+
+
+
+					[class*="col-"]{
+						float: left;
+						padding: 10px;
+					}
+
+					/*for mobile*/
+
+					[class*="col-"]{
+						width: 100%;
+					}
+
+
+/*common style*/
+
+h1{
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+h2{
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+a{
+	color: white;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+.first-hr{
+	border: 3px dotted white;
+	border-bottom: none;
+	margin: 15px auto;
+}
+				/*---------------
+				| NAVBAR STARTS |
+				---------------*/
+
+.navbar{
+	background-color: darkcyan;
+	padding: 0% 3%;
+	text-align: center;
+}
+
+#logo{
+	width: 120px;
+	height: 120px;
+}
+
+.nav-heading h1{
+	color: white;
+	font-family: "Anton SC", sans-serif;
+	font-weight: 250;
+	font-size: 35px;
+	font-style: normal;
+	letter-spacing: 5px;
+}
+
+.navbar-menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.navbar-menu a{
+	color: white;
+	border-radius: 10px;
+	margin: 7px 0;
+	padding: 10px;
+}
+
+.navbar-menu a:hover{
+		background-color: darkgray;
+		padding: 10px;
+}
+
+
+
+.navbar::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+				/*-------------
+				| NAVBAR ENDS |
+				-------------*/
+
+			/*-------------------
+			| FIRST PAGE STARTS |
+			-------------------*/
+
+.first-page{
+	text-align: center;
+	background-image: url(images/bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 100px 10px 100px 10px;
+}
+
+
+
+
+.description{
+	color: #00fffb;
+	font-weight: bolder;
+}
+
+.description h1{
+	  font-family: "Anton SC", sans-serif;
+	  font-weight: 300;
+	  font-size: 40px;
+	  font-style: normal;
+	  letter-spacing: 2px;
+
+
+	  animation-name: welcome;
+	  animation-delay: 0.5s;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: linear;
+}
+
+@keyframes welcome{
+	0%{
+		
+		opacity: 0;
+	}
+	50%{
+		
+		opacity: 1;
+	}
+	100%{
+		
+		opacity: 0;
+	}
+}
+
+
+
+.description p{
+	font-family: "Margarine", sans-serif;
+	font-weight: 200;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 20px 20px;
+	color: lightgrey;
+
+	 animation-name: para;
+	 animation-delay: 0.5s;
+	 animation-duration: 2.5s;
+	 animation-fill-mode: forwards;
+	 animation-timing-function: linear;
+}
+
+
+
+@keyframes para{
+	from{
+		
+		opacity: 0;
+	}
+	to{
+		
+		opacity: 1;
+	}
+}
+
+
+
+.first-page::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+			
+			/*-----------------
+			| FIRST PAGE ENDS |
+			-----------------*/
+
+			/*-----------------
+			| about me starts |
+			-----------------*/
+
+.about-me{
+		background-color: #738201;
+		padding: 1% 7%;
+		text-align: center;
+		color: white;
+		margin-top: 10px;
+}
+
+.about-me h2{
+	margin: 20px 0px;
+}
+
+.about-me img{
+	width: 250px;
+	height: 280px;
+	border: 5px solid white;
+	border-radius: 50%;
+}
+
+
+
+.about-me p,.desc, a{
+	margin: 15px 0px;
+	color: navajowhite;
+}
+
+.about-me a:hover{
+	color: blue;
+	padding: 3px 5px;
+	font-size: 20px;
+}
+
+.cv-btn{
+	background-color: cyan;
+	padding: 10px;
+	width: 150px;
+	margin: 20px auto;
+	font-size: 15px;
+	font-weight: bolder;
+	border: 1px solid blue;
+	border-radius: 20px;
+}
+
+.cv-btn:hover{
+	background-color: navajowhite;
+	border: 1px solid blue;
+	border-radius: 20px;
+}
+
+
+.about-me::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+			/*-----------------
+			|  about me ends  |
+			-----------------*/
+
+
+			/*---------------------
+			|  CARDS ITEM STARTS  |
+			---------------------*/
+
+.prof-exp{
+	padding: 1% 0%;
+	background-color: white;
+
+}
+
+.prof-exp .card{
+	background-color: #856d26;
+	padding: 20px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.prof-exp .card:hover{
+	box-shadow: 8px 8px 10px black;
+}
+
+.card .icon{
+	text-align: center;
+}
+
+.card .icon img{
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+	border: 5px solid white;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.card .title{
+	margin: 20px 0px;
+	background-color: #4d3f1a;
+	color: white;
+	padding: 5px;
+}
+
+
+.card .desc .para{
+	padding: 15px 30px;
+	color: white;
+}
+.card .desc h2{
+	line-height: 20px;
+	color: navajowhite;
+	font-size: 1.2rem;
+	text-align: left;
+	padding-bottom: 5px;
+}
+.card .desc p{
+	font-size: 1rem;
+}
+
+
+
+
+/*skills*/
+
+.skill-container{
+	padding-right: 40px;
+
+}
+
+.desc .skill-container li{
+	list-style: none;
+	font-size: 18px;
+	font-weight: bolder;
+	margin: 50px -10px;
+	color: white;
+	position: relative;
+}
+
+
+.desc .skill-container li::before{
+	position: absolute;
+	content: ' ';
+	top: calc(100% + 15px);
+	left: 0;
+
+	width: 100%;
+	height: 20px;
+	background-color: gray;
+	border-radius: 1000px;
+}
+
+.desc .skill-container li::after{
+	position: absolute;
+	content: ' ';
+	top: calc(100% + 15px);
+	left: 0;
+
+	width: 0%;
+	height: 20px;
+	background-color: #4d3f1a;
+	border-radius: 1000px;
+
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+.desc .skill-container .html::after{
+	animation-name: html;
+}
+
+@keyframes html{
+	to{
+		width: 90%;
+	}
+}
+
+.desc .skill-container .css::after{
+	animation-name: css;
+}
+
+@keyframes css{
+	to{
+		width: 80%;
+	}
+}
+
+.desc .skill-container .js::after{
+	animation-name: js;
+}
+
+@keyframes js{
+	to{
+		width: 20%;
+	}
+}
+
+.desc .skill-container .c::after{
+	animation-name: c;
+}
+
+@keyframes c{
+	to{
+		width: 70%;
+	}
+}
+
+.desc .skill-container .cplus::after{
+	animation-name: cplus;
+}
+
+@keyframes cplus {
+	to{
+		width: 10%;
+	}
+}
+
+
+.prof-exp::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+			/*---------------------
+			|  CARDS ITEM ends    |
+			---------------------*/
+
+
+
+			/*---------------------
+			|  footer up STARTS   |
+			---------------------*/
+
+.footer-up{
+	padding: 1% 7%;
+	background-color: darkcyan;
+	color: white;
+}
+
+
+.achievements, .contact, .contact-links{
+	margin: 30px 0px;
+}
+.achievements .first-hr, .contact .first-hr, .contact-links .first-hr{
+	margin-bottom: 40px;
+	width: 220px;
+}
+.achievements p{
+	padding: 10px;
+}
+
+.contact{
+	
+	text-align: center;
+}
+
+.contact input, textarea{
+	width: 100%;
+	padding: 8px;
+	text-align: center;
+	margin: 8px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	resize: none;
+	border: none;
+	border-radius: 8px;
+}
+
+.contact button{
+	width: 80px;
+	height: 30px;
+	background-color: #cfb336;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #7d7025;
+}
+
+.contact button:hover{
+
+	background-color: #7d7025;
+	color: #cfb336 ;
+	box-shadow: 3px 3px 3px 0px black;
+}
+
+
+.contact-links{
+	text-align: center;
+
+}
+
+
+.contact-links .btn{
+	border: none;
+	border-radius: 30px;
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.contact-links .btn:hover{
+	background-color: gray;
+}
+
+
+
+
+.footer-up::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+
+			/*---------------------
+			|  footer up endS   |
+			---------------------*/
+
+			/*---------------------
+			|  footer  STARTS     |
+			---------------------*/
+
+.footer{
+	padding: 1% 5%;
+	background-color: black;
+	color: white;
+}
+
+.footer-menu{
+	margin: 20px 0px;
+	text-align: center;
+}
+.footer-menu a{
+	text-align: center;
+	padding: 1%;
+	font-size: 12px;
+	color: white;
+
+}
+.footer-menu a:hover{
+	
+	color: gray;
+
+}
+.copyright{
+	text-align: center;
+	color: gray;
+	line-height: 30px;
+}
+
+
+
+
+
+
+
+
+.footer::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+					/*------------------
+					photographs starts
+					------------------*/
+.photo-body{
+	text-align: center;
+	background-color: navajowhite;
+}
+
+.upper-photo{ 
+	background-image: url(images/album.png);
+	background-size: 100% 100%;
+	padding: 120px 30px;
+}
+
+.upper-photo h3{
+	color: yellow;
+	font-size: 40px;
+	font-weight: bolder;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+
+	animation-name: heading-photo;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes heading-photo{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
+}
+.upper-photo p{
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	margin-top: 30px;
+
+
+	animation-name: para-photo;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes para-photo{
+	from{
+		opacity: 0%;
+	
+	}
+	to{
+		opacity: 100%;
+		
+	}
+}
+
+.middle-photo{
+	margin-top: 100px;
+	margin: 1% 7%;
+}
+.middle-photo h2{
+
+	font-size: 2rem;
+	font-weight: bolder;
+	color: darkcyan;
+	padding: 10px;;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: cyan;
+}
+
+
+.middle-photo .category img{
+	width: 100%;
+	height: 400px;
+	display: block;
+	border-radius: 15px 15px 0 0;
+	box-sizing: border-box;
+	border: 5px solid darkgray;
+	border-bottom: 0px;
+}
+
+
+.middle-photo .category-item:hover{
+	transform: scale(1.03);
+}
+
+
+.middle-photo .category-item p{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px 0px;
+	font-size: 25px;
+	font-weight: bolder;
+	color: yellow;
+	border: 5px solid darkgray;
+	border-radius: 0 0 15px 15px;
+
+}
+
+
+.middle-photo::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.lower-photo{
+	background-color: darkolivegreen;
+	color: white;
+	margin-top: 100px;
+	padding: 1% 7%;
+}
+.lower-photo img{
+	width: 100%;
+	border: 5px solid white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 2px black;
+	transition: .3s;
+}
+
+.lower-photo img:hover{
+	transform: scale(1.03);
+	box-shadow: 8px 8px 8px 2px black;
+}
+
+ .lower-photo h2{
+ 	color: white;
+ 	font-size: 2rem;
+ 	padding: 10px;
+ 	background-color: rgba(0, 0, 0, 0.4);
+ 	margin: 20px auto;
+ 	border-radius: 20px;
+ }
+
+.lower-photo p{
+	color: white;
+	text-align: left;
+ 	font-size: 1rem;
+ 	padding: 15px;
+ 	margin-top: 20px;
+ 	background-color: rgba(0, 0, 0, 0.4);
+ 	border-radius: 10px;
+ 	line-height: 30px;
+ 	margin-bottom: 50px;
+}
+ .mountain{
+
+ }
+.mountain::after{
+ 	display: table;
+ 	content: ' ';
+ 	clear: both;
+ }
+.sea{
+
+ }
+.sea::after{
+ 	display: table;
+ 	content: ' ';
+ 	clear: both;
+ }
+ .flowers{
+
+ }
+.flowers::after{
+ 	display: table;
+ 	content: ' ';
+ 	clear: both;
+ }
+
+
+.lower-photo::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+
+.photo-body::after{
+	content: '';
+	display: table;
+	clear: both;
+}
